@@ -105,4 +105,11 @@ public class UiController implements Initializable{
 
     }
 
+    public TextField getCategory_Tfield() {
+        return category_Tfield;
+    }
+
+    public TextArea getUiTextArea() {
+        return uiTextArea;
+    }
 }
