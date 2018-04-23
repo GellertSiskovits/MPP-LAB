@@ -21,9 +21,9 @@ public class MyServerTest extends Application{
             scene = new Scene(root,600,400);
             stage.setScene(scene);
             MyServer myServer = new MyServer(this.uiController);
-
-            stage.show();
             myServer.startRunning();
+            stage.show();
+
 
         }catch (Exception e){
             e.printStackTrace();
