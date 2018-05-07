@@ -37,11 +37,12 @@ public class ConcursClientObjectWorker implements Runnable, IConcursObserver{
         }
     }
 
+    @Override
     public void run(){
         while (connected){
             try {
                 Object request = input.readObject();
-                Object response = handleRequest((Request) request)
+                Object response = handleRequest((Request) request);
             }catch (IOException e){
                 e.printStackTrace();
             }catch (ClassNotFoundException e){
@@ -72,7 +73,7 @@ public class ConcursClientObjectWorker implements Runnable, IConcursObserver{
             try {
                 server.login(user, this);
                 return new OkResponse();
-            } catch (SpectacolException e) {
+            } catch (ConcursException e) {
                 connected=false;
                 return new ErrorResponse(e.getMessage());
             }
@@ -81,25 +82,25 @@ public class ConcursClientObjectWorker implements Runnable, IConcursObserver{
             System.out.println("Logout request");
             LogoutRequest logReq=(LogoutRequest)request;
             UserDTO udto=logReq.getUser();
-            Utilizator user= DTOUtils.getFromDTO(udto);
+            Angajat user= DTOUtils.getFromDTO(udto);
             try {
                 server.logout(user, this);
                 connected=false;
                 return new OkResponse();
 
-            } catch (SpectacolException e) {
+            } catch (ConcursException e) {
                 return new ErrorResponse(e.getMessage());
             }
         }
-        if (request instanceof RezervareRequest){
+        if (request instanceof ConcurentRequest){
             System.out.println("RezervareRequest ...");
-            RezervareRequest rezervareRequest=(RezervareRequest) request;
-            RezervareDTO rezervareDTO=rezervareRequest.getRezervareDTO();
-            Rezervare rezervare= DTOUtils.getFromDTO(rezervareDTO);
+            ConcurentRequest rezervareRequest=(ConcurentRequest) request;
+            ConcurentDTO concurentDTO=rezervareRequest.getConcurentDTO();
+            Concurent concurent= DTOUtils.getFromDTO(concurentDTO);
             try {
-                server.reserve(rezervare);
+                server.create(concurent);
                 return new OkResponse();
-            } catch (SpectacolException e) {
+            } catch (ConcursException e) {
                 return new ErrorResponse(e.getMessage());
             }
         }
@@ -119,14 +120,11 @@ public class ConcursClientObjectWorker implements Runnable, IConcursObserver{
         System.out.print("Contestant registere");
 
         try{
-            sendResponse(new );
+            sendResponse(new ConcurentResponse(concurentDTO));
         }catch (IOException e){
             throw  new ConcursException("Sending errr"+e);
         }
     }
 
-    @Override
-    public void run() {
 
-    }
 }
