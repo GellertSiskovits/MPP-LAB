@@ -8,6 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ConcursModel" />
+            <option value="$PROJECT_DIR$/ConcursNetworking" />
+            <option value="$PROJECT_DIR$/ConcursServer" />
+            <option value="$PROJECT_DIR$/ConcursServices" />
+            <option value="$PROJECT_DIR$/MainModule" />
           </set>
         </option>
       </GradleProjectSettings>
