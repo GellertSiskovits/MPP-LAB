@@ -9,5 +9,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Lab1-ConcursPersistance_main" />
+    <orderEntry type="module" module-name="ConcursNetworking_main" />
+    <orderEntry type="module" module-name="ConcursServices_main" />
+    <orderEntry type="module" module-name="ConcursModel_main" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.20" level="project" />
   </component>
 </module>

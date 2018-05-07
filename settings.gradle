@@ -4,4 +4,5 @@ include 'MainModule'
 include 'ConcursServices'
 include 'ConcursModel'
 include 'ConcursNetworking'
+include 'ConcursPersistance'
 

@@ -6,10 +6,14 @@
       <module name="ConcursModel_test" target="1.8" />
       <module name="ConcursNetworking_main" target="1.8" />
       <module name="ConcursNetworking_test" target="1.8" />
+      <module name="ConcursPersistance_main" target="1.8" />
+      <module name="ConcursPersistance_test" target="1.8" />
       <module name="ConcursServer_main" target="1.8" />
       <module name="ConcursServer_test" target="1.8" />
       <module name="ConcursServices_main" target="1.8" />
       <module name="ConcursServices_test" target="1.8" />
+      <module name="Lab1-ConcursPersistance_main" target="1.8" />
+      <module name="Lab1-ConcursPersistance_test" target="1.8" />
       <module name="MainModule_main" target="1.8" />
       <module name="MainModule_test" target="1.8" />
       <module name="Tema_Lab_1_main" target="1.8" />
