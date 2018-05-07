@@ -4,8 +4,12 @@ import java.io.Serializable;
 import java.util.function.Consumer;
 
 public class Client extends NetworkConnection{
-    public Client(Consumer<Serializable> onRecieveCallBack){
+    private String ipAdress;
+    private  int port;
+    public Client(String ipAdress, int port,Consumer<Serializable> onRecieveCallBack){
         super(onRecieveCallBack);
+        this.ipAdress = ipAdress;
+        this.port = port;
     }
 
     @Override
@@ -15,11 +19,11 @@ public class Client extends NetworkConnection{
 
     @Override
     protected String getIP() {
-        return null;
+        return ipAdress;
     }
 
     @Override
     protected int getPort() {
-        return 0;
+        return port;
     }
 }

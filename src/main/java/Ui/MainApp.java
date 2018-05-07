@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class MainApp extends Application{
     Parent root;
     Scene scene;
-    UiController uiController = new UiController();
+
     public  void start(Stage stage) throws  Exception {
       //  Menu.run();
        try {

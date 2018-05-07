@@ -22,7 +22,11 @@ public abstract class NetworkConnection {
     }
 
     public void send(Serializable data ) throws Exception{
-        connectionThread.out.writeObject(data);
+
+        System.out.print(data.toString());
+        Thread.sleep(10);
+        connectionThread.out.writeObject(data.toString());
+
     }
 
     public void closeConnection() throws Exception{

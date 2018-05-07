@@ -4,8 +4,11 @@ import java.io.Serializable;
 import java.util.function.Consumer;
 
 public class Server extends NetworkConnection{
-    public Server(Consumer<Serializable> onRecieveCallBack){
+
+    private int port;
+    public Server(int port,Consumer<Serializable> onRecieveCallBack){
         super(onRecieveCallBack);
+        this.port = port;
     }
 
     @Override
@@ -20,6 +23,6 @@ public class Server extends NetworkConnection{
 
     @Override
     protected int getPort() {
-        return 0;
+        return port;
     }
 }

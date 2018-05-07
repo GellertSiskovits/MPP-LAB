@@ -15,6 +15,12 @@ public class Angajat {
         this.password=password;
     };
 
+    public Angajat( String name, String password){
+
+        this.name=name;
+        this.password=password;
+    };
+
     public String getaId() {
         return aId;
     }
