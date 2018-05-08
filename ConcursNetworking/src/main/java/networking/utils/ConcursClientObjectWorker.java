@@ -98,7 +98,7 @@ public class ConcursClientObjectWorker implements Runnable, IConcursObserver{
             ConcurentDTO concurentDTO=rezervareRequest.getConcurentDTO();
             Concurent concurent= DTOUtils.getFromDTO(concurentDTO);
             try {
-                server.create(concurent);
+                server.create(concurent,"desen");
                 return new OkResponse();
             } catch (ConcursException e) {
                 return new ErrorResponse(e.getMessage());

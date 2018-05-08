@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursClient.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursClient.iml" group="ConcursClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursClient/ConcursClient_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursClient/ConcursClient_main.iml" group="ConcursClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursClient/ConcursClient_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursClient/ConcursClient_test.iml" group="ConcursClient" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursModel.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursModel.iml" group="ConcursModel" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursModel/ConcursModel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursModel/ConcursModel_main.iml" group="ConcursModel" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConcursModel/ConcursModel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ConcursModel/ConcursModel_test.iml" group="ConcursModel" />

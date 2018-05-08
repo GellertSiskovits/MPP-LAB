@@ -1,6 +1,7 @@
 package concurs.repository;
 
-import model.Concurs;
+import concurs.model.Concurs;
+
 
 public interface IConcursRepo {
     void afiseazaProbaNume();

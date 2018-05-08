@@ -1,6 +1,7 @@
 package concurs.repository;
 
-import model.Concurs;
+import concurs.model.Concurs;
+
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

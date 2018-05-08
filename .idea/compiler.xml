@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="ConcursClient_main" target="1.8" />
+      <module name="ConcursClient_test" target="1.8" />
       <module name="ConcursModel_main" target="1.8" />
       <module name="ConcursModel_test" target="1.8" />
       <module name="ConcursNetworking_main" target="1.8" />

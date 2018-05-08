@@ -33,15 +33,29 @@ public class ConcursServerImpl implements IConcursServer{
             throw new ConcursException("Authentification Failed");
     }
 
-
+    @Override
     public synchronized void create(Concurent concurent,String proba) throws ConcursException {
         concurentRepo.addConcurent(concurent.getNume(),proba,concurent.getVarsta());
         System.out.print("SUCCESULLY ADDED");
 
     }
 
+    public synchronized void handleAdding(Concurent concurent) throws ConcursException {
+        Thread t = new Thread(()->{
+            for(IConcursObserver s: loggedClients.values()){
+                try {
+                    s.contestantAdded(concurent);
+                } catch (ConcursException e) {
+                    e.printStackTrace();
+                }
+            }});
+        t.start();
+    }
+
     @Override
     public void logout(Angajat angajat, IConcursObserver client) throws ConcursException {
-
+        IConcursObserver localClient=loggedClients.remove(angajat.getName());
+        if (localClient==null)
+            throw new ConcursException("User "+angajat.getName()+" is not logged in.");
     }
 }

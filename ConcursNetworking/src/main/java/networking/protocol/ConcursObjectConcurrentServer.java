@@ -14,7 +14,7 @@ public class ConcursObjectConcurrentServer extends AbsConcurrentServer{
 
     @Override
     protected Thread createWorker(Socket client) {
-        C
+        
         return null;
     }
 }

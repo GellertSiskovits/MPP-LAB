@@ -6,6 +6,6 @@ import concurs.model.Inscris;
 
 public interface IConcursServer {
     void login(Angajat angajat, IConcursObserver client) throws ConcursException;
-    void create(Concurent concurent) throws ConcursException;
+    void create(Concurent concurent,String proba) throws ConcursException;
     void logout(Angajat angajat, IConcursObserver client) throws ConcursException;
 }
