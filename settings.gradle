@@ -6,4 +6,5 @@ include 'ConcursModel'
 include 'ConcursNetworking'
 include 'ConcursPersistance'
 include 'ConcursClient'
+include 'ORM_Concurs'
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":ORM_Concurs" external.linked.project.path="$MODULE_DIR$/../../ORM_Concurs" external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="Tema_Lab1" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../ORM_Concurs">
+      <excludeFolder url="file://$MODULE_DIR$/../../ORM_Concurs/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ORM_Concurs/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ORM_Concurs/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Hibernate 5.2.16-5.2.16" level="project" />
+  </component>
+</module>

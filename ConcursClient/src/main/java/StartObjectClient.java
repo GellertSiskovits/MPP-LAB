@@ -96,11 +96,11 @@ public class StartObjectClient extends Application implements IConcursObserver {
 
                 angajat=new Angajat(txtUser.getText(), txtPwd.getText());
 
-                try {
-                    server.login(angajat,this);
-                } catch (ConcursException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    server.login(angajat,this);
+//                } catch (ConcursException e) {
+//                    e.printStackTrace();
+//                }
 
 //                ListView<String> list = new ListView<String>();
                 list.setPrefSize(700, 200);

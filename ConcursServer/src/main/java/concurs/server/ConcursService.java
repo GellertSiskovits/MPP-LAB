@@ -1,10 +1,19 @@
 package concurs.server;
 
+import concurs.repository.AngajarRepo;
+import concurs.repository.ConcurentRepo;
+import concurs.repository.IAngajatRepo;
+import concurs.repository.IConcurentRepo;
+
 public class ConcursService implements IConcursService{
-   
+    private  IAngajatRepo angajatRepo = new AngajarRepo();
+    private IConcurentRepo concurentRepo = new ConcurentRepo();
+
+
+
     @Override
     public String showContestants() {
-        return null;
+        return concurentRepo.showAllConcurentNames();
     }
 
     @Override
@@ -17,8 +26,7 @@ public class ConcursService implements IConcursService{
         return null;
     }
 
-    @Override
     public boolean validate(String user, String pass) {
-        return false;
+        return angajatRepo.check(user,pass);
     }
 }

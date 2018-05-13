@@ -18,6 +18,8 @@
       <module name="Lab1-ConcursPersistance_test" target="1.8" />
       <module name="MainModule_main" target="1.8" />
       <module name="MainModule_test" target="1.8" />
+      <module name="ORM_Concurs_main" target="1.8" />
+      <module name="ORM_Concurs_test" target="1.8" />
       <module name="Tema_Lab_1_main" target="1.8" />
       <module name="Tema_Lab_1_test" target="1.8" />
     </bytecodeTargetLevel>

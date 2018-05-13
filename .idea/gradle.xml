@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/ConcursServer" />
             <option value="$PROJECT_DIR$/ConcursServices" />
             <option value="$PROJECT_DIR$/MainModule" />
+            <option value="$PROJECT_DIR$/ORM_Concurs" />
           </set>
         </option>
       </GradleProjectSettings>
